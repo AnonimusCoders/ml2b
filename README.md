@@ -27,7 +27,7 @@ Install `uv` once, then run `uv sync` (or `uv pip install -r requirements.txt`) 
    *(If you use another agent, keep the same file structure and command. See `python run.py build-runtime --help` for details.)*
 4. Prepare the dataset:
    ```bash
-   python run.py prepare-dataset
+   python run.py prepare-data
    ```
    *(If you encounter an error with `gdown`, manually download the data from [Google Drive](https://drive.google.com/drive/folders/18QoNa3vjdJouI4bAW6wmGbJQCrWprxyf).)*
 
