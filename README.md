@@ -31,7 +31,7 @@ Install `uv` once, then run `uv sync` (or `uv pip install -r requirements.txt`) 
    # OR
    python run.py prepare-data gdrive
    ```
-   *(The dataset can also be downloaded manually from the *REDACTED* and placing the `data`,`tasks` directories into `competitions`)*
+   *(The dataset can also be downloaded manually from [this link](https://mega.nz/folder/voJTRZIZ#ueVtihWTuWq60UOGx2lzQw) and placing the `data`,`tasks` directories into `competitions`)*
    
    *(If you wish to download from GDrive and encounter an error with `gdown`, manually download the data from [Google Drive](https://drive.google.com/drive/folders/18QoNa3vjdJouI4bAW6wmGbJQCrWprxyf). You would also need to download task descriptions manually)*
 
