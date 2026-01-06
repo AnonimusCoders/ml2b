@@ -1,6 +1,7 @@
 from enum import StrEnum
 from typing import Any, Dict, List, Optional
 import os
+import math
 
 
 class Language(StrEnum):
@@ -113,9 +114,11 @@ class Competition:
         """Get description for a specific language"""
         return self._get_meta_for_lang(lang).get("description")
 
-    def get_data_card(self, lang: Language) -> dict:
-        """Get data card for a specific language"""
-        return self._get_meta_for_lang(lang).get("data_card", " ")
+    def get_data_card(self, lang: Language) -> str:
+        value = self._get_meta_for_lang(lang).get("data_card", " ")
+        if value is None or (isinstance(value, float) and math.isnan(value)):
+            return " "
+        return str(value)
 
     def get_domain(self, lang: Language) -> dict:
         """Get domain information for a specific language"""

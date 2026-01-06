@@ -1,1 +1,1 @@
-git+https://github.com/AnonimusCoders/aideml.git
+git+https://github.com/azrails/aideml.git
